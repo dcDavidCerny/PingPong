@@ -8,22 +8,26 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
-    border-radius: 100px;
-    min-height: 48vh;
+    border-radius: 70px;
+    height: 48vh;
     min-width: 15vw;
-    max-height: 100%;
     margin: 15px;
     flex-direction: column;
     visibility: hidden;
     margin-left: 22vw;
+    overflow: auto;
 }
 
 table {
     border: 1px solid black;
-    width: 85%;
+    width: 350px;
     border-radius: 20px;
-    margin-bottom: 40px;
     padding: 3px;
+    margin: auto;
+}
+
+.tableDiv {
+    overflow: auto;
 }
 
 table>tr:last-child>td:first-child {
@@ -102,7 +106,7 @@ li {
     flex-direction: column;
     background-color: rgb(35, 255, 255);
     border: 0px solid rgb(35, 255, 255);
-    border-radius: 12%;
+    border-radius: 40px;
     overflow: hidden;
 
 }

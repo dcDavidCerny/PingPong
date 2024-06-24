@@ -1,0 +1,235 @@
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgb(77, 69, 69);
+}
+
+.setScoresListDiv {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    min-height: 48vh;
+    min-width: 15vw;
+    max-height: 100%;
+    margin: 15px;
+    flex-direction: column;
+    visibility: hidden;
+    margin-left: 22vw;
+}
+
+table {
+    border: 1px solid black;
+    width: 85%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+table>tbody>tr:last-child>td:first-child {
+    border-bottom-left-radius: 50px;
+}
+
+table>tbody>tr:last-child>td:last-child {
+    border-bottom-right-radius: 50px;
+}
+
+table>tbody>tr:first-child>td:first-child {
+    border-top-left-radius: 50px;
+}
+
+table>tbody>tr:first-child>td:last-child {
+    border-top-right-radius: 50px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: 900;
+}
+
+th {
+    font-size: 22px;
+}
+
+td {
+    font-size: 19px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
+
+.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vb;
+}
+
+#winningScore {
+    min-height: 5vh;
+    border: 1px solid black;
+}
+
+.selectDiv {
+    display: flex;
+}
+
+.theDiv {
+    display: flex;
+    align-items: center;
+}
+
+.divWithTwoDivs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(35, 255, 255);
+    border: 0px solid rgb(35, 255, 255);
+    border-radius: 12%;
+    overflow: hidden;
+
+}
+
+#winningScore {
+    min-width: 5vw;
+    border: 2px solid black;
+    text-align: center;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#p1Button {
+    min-height: 5vh;
+    width: 9vw;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+#p2Button {
+    min-height: 5vh;
+    width: 9vw;
+    border: 2px solid black;
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+#newSetButton {
+    min-height: 5vh;
+    min-width: 5vw;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin: 20px;
+}
+
+#resetButton {
+    min-height: 5vh;
+    min-width: 5vw;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#options {
+    font-size: 15px;
+}
+
+#winningScore:hover,
+#p1Button:hover,
+#p2Button:hover,
+#newSetButton:hover,
+#resetButton:hover {
+    border-bottom: 3px solid grey;
+    background-color: rgb(220, 220, 220);
+    font-size: 15px;
+}
+
+.floatPlus {
+    position: absolute;
+    font-size: 35px;
+    color: green;
+    font-weight: 900;
+    animation: float-up 1s ease-out forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes float-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}
+
+.plusQuestion {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.thePlusQuestionP1,
+.thePlusQuestionP2 {
+    display: none;
+    font-size: medium;
+}
+
+.slidingText {
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-140%);
+    }
+
+    49% {
+        color: white;
+    }
+
+    50% {
+        transform: translateX(140%);
+        color: black;
+    }
+
+    99% {
+        color: black;
+    }
+
+
+    100% {
+        transform: translateX(-140%);
+    }
+}

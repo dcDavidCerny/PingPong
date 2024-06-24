@@ -15,7 +15,7 @@
 Ping Pong Counter is a simple web application designed to help you keep track of scores in ping pong and many other games. This project was created as a part of my journey into web development.
 
 ## Demo
-Check out the live version of the application here: [Ping Pong Counter on GitHub Pages](https://dcdavidcerny.github.com/PingPong)
+Check out the live version of the application here: [Ping Pong Counter on GitHub Pages](https://dcdavidcerny.github.io/PingPong/)
 
 ## Features
 - Easy to use interface

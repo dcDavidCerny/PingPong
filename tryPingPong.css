@@ -23,22 +23,23 @@ table {
     width: 85%;
     border-radius: 20px;
     margin-bottom: 40px;
+    padding: 3px;
 }
 
-table>tbody>tr:last-child>td:first-child {
-    border-bottom-left-radius: 50px;
+table>tr:last-child>td:first-child {
+    border-bottom-left-radius: 20px;
 }
 
-table>tbody>tr:last-child>td:last-child {
-    border-bottom-right-radius: 50px;
+table>tr:last-child>td:last-child {
+    border-bottom-right-radius: 20px;
 }
 
-table>tbody>tr:first-child>td:first-child {
-    border-top-left-radius: 50px;
+table>tr:first-child>th:first-child {
+    border-top-left-radius: 20px;
 }
 
-table>tbody>tr:first-child>td:last-child {
-    border-top-right-radius: 50px;
+table>tr:first-child>th:last-child {
+    border-top-right-radius: 20px;
 }
 
 th,

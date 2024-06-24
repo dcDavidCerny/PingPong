@@ -83,7 +83,7 @@ function playGameOverSound(winnerScore, loserScore) {
 
 function playAudio(name) {
     const audio = document.createElement("audio");
-    audio.src = name + ".mp3";
+    audio.src = "sounds/" + name + ".mp3";
     document.body.append(audio);
     audio.play();
     setTimeout(function deleteElement() {

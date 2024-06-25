@@ -168,24 +168,23 @@ function createNewSet() {
 
 }
 
-
 const plusQuestionP1 = document.querySelector(".thePlusQuestionP1");
 const plusQuestionP2 = document.querySelector(".thePlusQuestionP2");
 
 p1Button.addEventListener("mouseover", function () {
-    plusQuestionP1.style.display = "inline";
+    plusQuestionP1.style.visibility = "visible";
 })
 
 p1Button.addEventListener("mouseout", function () {
-    plusQuestionP1.style.display = "none";
+    plusQuestionP1.style.visibility = "hidden";
 })
 
 p2Button.addEventListener("mouseover", function () {
-    plusQuestionP2.style.display = "inline";
+    plusQuestionP2.style.visibility = "visible";
 })
 
 p2Button.addEventListener("mouseout", function () {
-    plusQuestionP2.style.display = "none";
+    plusQuestionP2.style.visibility = "hidden";
 })
 
 resetButton.addEventListener("click", function () {

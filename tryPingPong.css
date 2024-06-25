@@ -202,8 +202,8 @@ li {
 
 .thePlusQuestionP1,
 .thePlusQuestionP2 {
-    display: none;
     font-size: medium;
+    visibility: hidden;
 }
 
 .slidingText {
